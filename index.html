@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<thml>
+  <script type="text/javascript">
+    //alert("今日もがんばりましょ");
+
+      function check() {
+      ans = Number(Q_form.answer.value);
+
+      if (ans == 136900) {
+        var message = "正解";
+        var siki = "";
+      } else {
+        var message = "不正解";
+        var siki = "計算式：190,000×0.73=";
+      }
+        document.getElementById("message").innerHTML = message;
+        document.getElementById("siki").innerHTML = siki;
+      }
+
+/*
+          var answerList = [
+              "選択してください",
+              "✖️",
+              "✖️",
+              "◯",
+              "✖️"
+          ];
+
+          function showAnswer() {
+              var choiceNo = document.getElementById("choiceList").value;
+              document.getElementById("answer").innerHTML = "";
+              document.getElementById("answer").innerHTML += "あなたのレベルがわかります。<br>";
+              document.getElementById("answer").innerHTML += "あなたの答えは、「" + answerList[choiceNo] + "」です。";
+          }
+          */
+      </script>
+<head>
+<title>HTML文書の例</title>
+全商珠算・電卓実務検定試験用
+</head>
+<body bgcolor="#11aaff">
+<center>
+<h1>３級分野別過去問題</h1></center>
+<hr>
+<a href = "http://www.shoryo.jp">藤沢翔陵高等学校へ</a><br>
+<a href = "http://www.zensho.or.jp/puf/examination/pastexams/calculating.html">全商珠算・電卓実務検定試験　過去問題へ</a>
+<hr>
+<center><marquee width=300 bgcolor="#ffffff">
+めざせ合格！！
+</marquee></center>
+
+<h2>割合</h2>
+<form method="get" name="Q_form">
+<p><h3><font color = #000000> 1.¥190,000の73%はいくらか。</font></h3></p>
+答え<input type = "text" value="" id="answer">
+<input type ="button" value="回答する" onclick="check()"></input>
+<p id ="message"</p>
+<p id ="siki"></p>
+</form>
+<hr>
+
+
+<!--
+<p>
+<h3>あ</h3>
+　い<B>　う</B>　え<BR>
+<h4>お</h4>
+<hr align=center size=10 width=420 color="#20ff00">
+
+<p>複数のファイルを一つのファイルにまとめたり，まとめたファイルから元のファイルを取り出したりするためのソフトウェア。</p>
+<select id="choiceList">
+  <option value="0">選択してください</option>
+  <option value="1">暗号化</option>3
+  <option value="2">復号</option>
+  <option value="3">アーカイバ</option>
+  <option value="4">秘密鍵暗号方式</option>
+</select>
+<button onclick="showAnswer()">回答する</button>
+<hr>
+<p id="answer"></p>
+-->
+
+</body>
+</html>
