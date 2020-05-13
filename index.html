@@ -6,7 +6,7 @@
       function check() {
       ans = Number(Q_form.answer.value);
 
-      if (ans == 136900) {
+      if (ans == 138700) {
         var message = "正解";
         var siki = "";
       } else {
@@ -17,6 +17,22 @@
         document.getElementById("siki").innerHTML = siki;
       }
 
+/*      var ary1 = [い,i];
+      var ary2 = [う,u];
+
+      var ary = [ary0,ary1,ary2];
+
+      for (var i = 0; i < 2; i++){
+        var hyou = "<p>";
+        document.getElementById()"<p>";
+
+        for (var j = 0; j < 3; j++){
+          var hyouji = "[" + i + "][" + j + "] = " + ary[i][j] + "<br />";
+          document.getElementById("hyouji".innerHTML = hyouji;
+        }
+
+      }
+      */
 /*
           var answerList = [
               "選択してください",
@@ -51,11 +67,35 @@
 
 <h2>割合</h2>
 <form method="get" name="Q_form">
-<p><h3><font color = #000000> 1.¥190,000の73%はいくらか。</font></h3></p>
-答え<input type = "text" value="" id="answer">
+<p><h3><font color = #000000> 1.¥190,000の73%はいくらか。(139-3-1)</font></h3></p>
+答え　￥<input type = "text" value="" id="answer">
 <input type ="button" value="回答する" onclick="check()"></input>
 <p id ="message"</p>
 <p id ="siki"></p>
+<hr>
+
+<p id ="message"</p>
+<p id ="siki"></p>
+
+<h2>貨幣換算</h2>
+<p><h3><font color = #000000>1.¥2,784は何ポンド何ペンスか。ただし，£1=¥128とする。(139-3-2)</font></h3></p>
+<p><h3><font color = #000000>2.$38.90は円でいくらか。ただし，$1=¥106とする。（円未満4捨5入）(139-3-8)</font></h3></p>
+
+<hr>
+<h2>度量衡</h2>
+<p><h3><font color = #000000>1.315Lは何米ガロンか。ただし，1米ガロン=3.785Lとする。（米ガロン未満4捨5入）(139-3-5)</font></h3></p>
+<p><h3><font color = #000000>2.63米トンは何キログラムか。ただし，1米トン=907.2kgとする。（キログラム未満4捨5入）(139-3-10)</font></h3></p>
+<hr>
+<h2>単利</h2>
+<p><h3><font color = #000000>1.¥520,000を年利率2.1%で4か月間貸し付けると，期日に受け取る利息はいくらか。(139-3-4)</font></h3></p>
+<p><h3><font color = #000000>2.元金¥960,000を年利率1.4%で51日間借りると，期日に支払う元利合計はいくらか。（円未満切り捨て）(139-3-7)</font></h3></p>
+<hr>
+<h2>売買計算</h2>
+<p><h3><font color = #000000>1.定価の2割引きで販売したところ，売価が¥608,000になった。定価はいくらであったか。(139-3-3)</font></h3></p>
+<p><h3><font color = #000000>2.原価¥770,000の商品を販売したところ，損失額が¥130,900となった。損失額は原価の何パーセントか。(139-3-6)
+<p><h3><font color = #000000>3.1房につき¥860の商品を720房仕入れ，仕入諸掛¥24,700を支払った。諸掛込原価はいくらか。(139-3-9)
+
+
 </form>
 <hr>
 
